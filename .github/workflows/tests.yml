@@ -1,7 +1,5 @@
 name: JFrog Client Go Tests
-on:
-  pull_request_target:
-    types: [labeled]
+on: [pull_request]
 jobs:
   JFrog-Client-Go-Tests:
     name: ${{ matrix.product }} (${{ matrix.os }})
